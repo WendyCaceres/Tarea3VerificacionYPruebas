@@ -40,12 +40,12 @@ public class CreateTest {
         Thread.sleep(3000);
 
         chrome.findElement(By.className("AddProjectLiDiv")).click();
-        chrome.findElement(By.id("NewProjNameInput")).sendKeys("Proyecto Rebeca Navarro");
+        chrome.findElement(By.id("NewProjNameInput")).sendKeys("Proyecto Wendy Caceres");
         chrome.findElement(By.id("NewProjNameButton")).click();
 
         Thread.sleep(2000);
 
-        Assertions.assertTrue(chrome.findElement(By.className("CurrentProjectTitle")).getText().contains("Proyecto Rebeca Navarro"),
+        Assertions.assertTrue(chrome.findElement(By.className("CurrentProjectTitle")).getText().contains("Proyecto Wendy Caceres"),
                 "ERROR! No se pudo crear el proyecto");
     }
 }
